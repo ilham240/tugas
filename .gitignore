@@ -1,32 +1,30 @@
-# Prerequisites
-*.d
+#include<iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+// ini adalah prototype function
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+void pengurangan ( int a, int b){
+	cout << (a - b);
+}
+void penjumlahan ( int x, int y){
+	cout << (x + y);
+}
+void perkalian ( int angka1, int angka2){
+	cout << (angka1 * angka2);
+}
+double pembagian ( double c, double d){
+	cout << (c / d);
+}
+int main (){
+	cout<<"Hasil function pengurangan"<<endl;
+	pengurangan (15, 5);
+	cout<<endl;
+	cout<<"Hasil function penjumlahan"<<endl;
+	penjumlahan (20, 10);
+	cout<<endl;
+	cout<<"Hasil hasil function perkalian"<<endl;
+	perkalian (9, 9);
+	cout<<endl;
+	cout<<"Hasil hasil function pembagian"<<endl;
+	pembagian (33.3, 19.5);
+}
